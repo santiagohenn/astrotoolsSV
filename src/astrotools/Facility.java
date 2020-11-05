@@ -7,8 +7,8 @@ public class Facility {
     private double height;
 
     public Facility(double lat, double lon, double height) {
-        this.lat = lat;
-        this.lon = lon;
+        this.lat = Math.toRadians(lat);
+        this.lon = Math.toRadians(lon);
         this.height = height;
     }
 
